@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", async () => {
-  // Use async if supported
   const sidebarToggle = document.getElementById("sidebar-toggle");
+  const sidebarContainer = document.getElementById("sidebar-cont");
 
   try {
-    // fetch sidebar content using absolute path
-      const response = await fetch("/sidebar.html");
-      const data = await response.text();
-      document.getElementById("sidebar-cont").innerHTML = data;
-    
+    // Fetch sidebar content
+    const response = await fetch("/sidebar.html");
+    const data = await response.text();
+    sidebarContainer.innerHTML = data;
+
+    // Sidebar toggle functionality
     sidebarToggle.addEventListener("click", function () {
       const sidebar = document.querySelector(".sidebar");
       sidebar.classList.toggle("active");
@@ -17,7 +18,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     console.error("Error loading sidebar:", error);
   }
 
-  // **Function to handle the sidebar visibility based on window width**
+  // Function to handle the sidebar visibility based on window width
   function handleWindowResize() {
     const sidebar = document.querySelector(".sidebar");
     if (sidebar) {
@@ -40,7 +41,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   }
 
-  // Call handleWindowResize initially to set the correct sidebar state
+  // Initial call to set sidebar state
   handleWindowResize();
 
   // Attach resize and scroll event listeners
