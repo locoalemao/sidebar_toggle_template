@@ -1,0 +1,37 @@
+@media screen and (max-width: 320px) {
+  .button {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .sidebar-button {
+    height: 3.2rem;
+  }
+
+  .sidebar-button div {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+  .sidebar.active {
+    transform: translateX(0);
+  }
+  .sidebar.active + .sidebar-toggle {
+    left: 5.5rem;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 590px) {
+  .sidebar {
+    transform: translateX(0);
+  }
+  .sidebar-toggle {
+    display: none;
+  }
+}
