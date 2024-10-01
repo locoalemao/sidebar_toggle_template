@@ -19,12 +19,13 @@ The repository contains the following files and directories:
 
 /
 |-- index.html
-|-- sidebar.html 
+|-- sidebar.html
 |
 |-- assets/
 |   |-- js/ 
 |   |   |-- sidebar.js
-|   |
-|   |-- css/
-|   |   |-- breakpoint.css
-|   |   |-- sidebar.css
+|
+|-- css/
+|   |-- breakpoint.css
+|   |-- sidebar.css
+
