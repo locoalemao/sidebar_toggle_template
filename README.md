@@ -18,14 +18,11 @@ This repository provides a simple and flexible way to implement a collapsible si
 The repository contains the following files and directories:
 
 /
-|-- index.html
-|-- sidebar.html
-|
-|-- assets/
-|   |-- js/ 
-|   |   |-- sidebar.js
-|
-|-- css/
-|   |-- breakpoint.css
-|   |-- sidebar.css
-
+- index.html
+- sidebar.html
+- assets/
+  - js/
+    - sidebar.js
+  - css/
+    - breakpoint.css
+    - sidebar.css
